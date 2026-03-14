@@ -1,7 +1,11 @@
 {
   "permissions": {
     "allow": [
-      "Bash(cmd.exe /c \"npm --version\")"
+      "Bash(cmd.exe /c \"npm --version\")",
+      "WebSearch",
+      "WebFetch(domain:images.unsplash.com)",
+      "WebFetch(domain:unsplash.com)",
+      "WebFetch(domain:images.pexels.com)"
     ]
   }
 }

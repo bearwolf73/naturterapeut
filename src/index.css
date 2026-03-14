@@ -520,6 +520,295 @@ body {
   background: #1e3d1b;
 }
 
+/* BEHANDLINGER */
+.behandlinger-side {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 64px 64px 80px;
+}
+
+.behandlinger-hero {
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+.behandlinger-hero h2 {
+  font-size: 2rem;
+  color: #2d5a27;
+  margin-bottom: 8px;
+}
+
+.behandlinger-hero p {
+  color: #666;
+  font-size: 1rem;
+}
+
+.behandlinger-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  margin-bottom: 56px;
+}
+
+.behandling-kort {
+  background: white;
+  border: 2px solid #e5ddd0;
+  border-radius: 16px;
+  padding: 32px 28px;
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.2s;
+}
+
+.behandling-kort:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.behandling-ikon {
+  font-size: 2rem;
+  margin-bottom: 12px;
+}
+
+.behandling-kort h3 {
+  font-size: 1.2rem;
+  color: #1a1a1a;
+  margin-bottom: 10px;
+}
+
+.behandling-ingress {
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.behandling-kort ul {
+  list-style: none;
+  flex: 1;
+  margin-bottom: 24px;
+}
+
+.behandling-kort ul li {
+  font-size: 0.875rem;
+  color: #555;
+  padding: 6px 0;
+  border-bottom: 1px solid #f0ebe2;
+}
+
+.behandling-kort ul li::before {
+  content: "✓ ";
+  color: #2d5a27;
+  font-weight: bold;
+}
+
+.behandling-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.behandling-varighet {
+  font-size: 0.85rem;
+  color: #888;
+}
+
+.behandlinger-bunntekst {
+  background: #f0ebe2;
+  border-radius: 16px;
+  padding: 32px;
+  text-align: center;
+  font-size: 1rem;
+  color: #444;
+}
+
+.behandlinger-bunntekst a {
+  color: #2d5a27;
+  font-weight: bold;
+  text-decoration: none;
+  border-bottom: 2px solid #2d5a27;
+}
+
+.behandlinger-bunntekst a:hover {
+  opacity: 0.7;
+}
+
+/* OM MEG */
+.om-meg-side {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 64px 64px 80px;
+}
+
+.om-meg-hero {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 64px;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.om-meg-bilde img {
+  width: 100%;
+  height: 480px;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+}
+
+.om-meg-intro h2 {
+  font-size: 2rem;
+  color: #2d5a27;
+  margin-bottom: 4px;
+}
+
+.om-meg-intro h3 {
+  font-size: 1.4rem;
+  color: #1a1a1a;
+  margin-bottom: 4px;
+}
+
+.om-meg-rolle {
+  font-size: 0.9rem;
+  color: #888;
+  font-style: italic;
+  margin-bottom: 24px;
+}
+
+.om-meg-intro p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #444;
+  margin-bottom: 16px;
+}
+
+.om-meg-verdier {
+  margin-bottom: 80px;
+}
+
+.om-meg-verdier h2,
+.om-meg-utdanning h2 {
+  font-size: 1.6rem;
+  color: #2d5a27;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.verdier-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.verdi-kort {
+  background: white;
+  border-radius: 16px;
+  padding: 32px 24px;
+  text-align: center;
+  border: 2px solid #e5ddd0;
+  transition: box-shadow 0.2s;
+}
+
+.verdi-kort:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.verdi-ikon {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.verdi-kort h4 {
+  font-size: 1rem;
+  color: #1a1a1a;
+  margin-bottom: 10px;
+}
+
+.verdi-kort p {
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+.om-meg-utdanning {
+  margin-bottom: 64px;
+}
+
+.tidslinje {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  border-left: 3px solid #2d5a27;
+  padding-left: 32px;
+  margin-left: 48px;
+}
+
+.tidslinje-punkt {
+  position: relative;
+  padding: 0 0 32px;
+}
+
+.tidslinje-punkt::before {
+  content: "";
+  position: absolute;
+  left: -40px;
+  top: 6px;
+  width: 14px;
+  height: 14px;
+  background: #2d5a27;
+  border-radius: 50%;
+  border: 3px solid #f9f6f1;
+  box-shadow: 0 0 0 2px #2d5a27;
+}
+
+.tidslinje-aar {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #2d5a27;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 4px;
+}
+
+.tidslinje-innhold {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.tidslinje-innhold strong {
+  font-size: 1rem;
+  color: #1a1a1a;
+}
+
+.tidslinje-innhold span {
+  font-size: 0.9rem;
+  color: #666;
+  font-style: italic;
+}
+
+.om-meg-sitat {
+  background: #f0ebe2;
+  border-radius: 16px;
+  padding: 48px 64px;
+  text-align: center;
+}
+
+.om-meg-sitat blockquote {
+  font-size: 1.2rem;
+  color: #2c2c2c;
+  line-height: 1.7;
+  font-style: italic;
+  margin-bottom: 16px;
+}
+
+.om-meg-sitat cite {
+  font-size: 0.9rem;
+  color: #888;
+}
+
 /* RESPONSIVE */
 @media (max-width: 768px) {
   .hero {
@@ -536,5 +825,38 @@ body {
   .header {
     padding: 16px 24px;
     flex-wrap: wrap;
+  }
+
+  .behandlinger-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .behandlinger-side {
+    padding: 40px 24px 64px;
+  }
+
+  .om-meg-hero {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .om-meg-bilde img {
+    height: 320px;
+  }
+
+  .verdier-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .om-meg-side {
+    padding: 40px 24px 64px;
+  }
+
+  .om-meg-sitat {
+    padding: 32px 24px;
+  }
+
+  .tidslinje {
+    margin-left: 16px;
   }
 }

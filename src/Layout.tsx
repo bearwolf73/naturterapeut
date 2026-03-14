@@ -18,6 +18,8 @@ function Layout() {
         <NavLink to="/" end className={({ isActive }) => isActive ? "active" : ""}>Hjem</NavLink>
         <NavLink to="/priser" className={({ isActive }) => isActive ? "active" : ""}>Priser</NavLink>
         <NavLink to="/kontaktinfo" className={({ isActive }) => isActive ? "active" : ""}>Kontaktinfo</NavLink>
+        <NavLink to="/behandlinger" className={({ isActive }) => isActive ? "active" : ""}>Behandlinger</NavLink>
+        <NavLink to="/om-meg" className={({ isActive }) => isActive ? "active" : ""}>Om meg</NavLink>
       </nav>
 
       <Outlet />
